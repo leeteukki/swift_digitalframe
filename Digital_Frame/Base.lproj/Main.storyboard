@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Digital_Frame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,44 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10.png" translatesAutoresizingMaskIntoConstraints="NO" id="DnN-e7-bpT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7.5" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="m5r-Ge-a68">
+                                <rect key="frame" x="14" y="576" width="347" height="31"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjl-mW-KBb">
+                                <rect key="frame" x="164" y="614" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DnN-e7-bpT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3yt-tx-XY4"/>
+                            <constraint firstItem="m5r-Ge-a68" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Ck-sK-1qY"/>
+                            <constraint firstAttribute="trailing" secondItem="DnN-e7-bpT" secondAttribute="trailing" id="5rT-Mf-YsW"/>
+                            <constraint firstItem="rjl-mW-KBb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="148" id="7jP-Tu-ygF"/>
+                            <constraint firstItem="rjl-mW-KBb" firstAttribute="top" secondItem="m5r-Ge-a68" secondAttribute="bottom" constant="8" id="8eM-qm-Ajh"/>
+                            <constraint firstItem="DnN-e7-bpT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="I4a-5K-qnm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rjl-mW-KBb" secondAttribute="bottom" constant="23" id="U0P-EJ-6a6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DnN-e7-bpT" secondAttribute="bottom" id="W9C-rB-HmH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rjl-mW-KBb" secondAttribute="trailing" constant="149" id="YoO-Jb-agY"/>
+                            <constraint firstItem="DnN-e7-bpT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZLF-H8-zaM"/>
+                            <constraint firstAttribute="trailing" secondItem="DnN-e7-bpT" secondAttribute="trailing" id="acr-wh-aFJ"/>
+                            <constraint firstItem="m5r-Ge-a68" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="e3v-cB-NSP"/>
+                            <constraint firstItem="m5r-Ge-a68" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jbG-HL-0gp"/>
+                            <constraint firstItem="DnN-e7-bpT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rjH-Iv-k5J"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DnN-e7-bpT" secondAttribute="bottom" id="zXa-cc-DYe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10.png" width="1080" height="1336"/>
+    </resources>
 </document>
