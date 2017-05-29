@@ -97,6 +97,7 @@
 		A005DD351EDC5F6B0044E74B /* Digital_Frame */ = {
 			isa = PBXGroup;
 			children = (
+				A005DD641EDC5FBD0044E74B /* Image */,
 				A005DD361EDC5F6B0044E74B /* AppDelegate.swift */,
 				A005DD381EDC5F6B0044E74B /* ViewController.swift */,
 				A005DD3A1EDC5F6B0044E74B /* Main.storyboard */,
@@ -123,6 +124,13 @@
 				A005DD581EDC5F6B0044E74B /* Info.plist */,
 			);
 			path = Digital_FrameUITests;
+			sourceTree = "<group>";
+		};
+		A005DD641EDC5FBD0044E74B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
