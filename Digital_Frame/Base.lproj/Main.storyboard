@@ -27,11 +27,24 @@
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="7.5" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="m5r-Ge-a68">
                                 <rect key="frame" x="14" y="576" width="347" height="31"/>
+                                <connections>
+                                    <action selector="changeSpeedAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="58L-Aa-W4w"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjl-mW-KBb">
                                 <rect key="frame" x="164" y="614" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="toggleAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RoW-nt-VUM"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1AF-Eg-HX5">
+                                <rect key="frame" x="333" y="594" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -52,6 +65,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DnN-e7-bpT" secondAttribute="bottom" id="zXa-cc-DYe"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="DnN-e7-bpT" id="jFO-7e-3Ok"/>
+                        <outlet property="speedSlider" destination="m5r-Ge-a68" id="dR9-iw-DgF"/>
+                        <outlet property="speedViewer" destination="1AF-Eg-HX5" id="pax-gp-YLP"/>
+                        <outlet property="toggleButton" destination="rjl-mW-KBb" id="tj5-HM-nIU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
